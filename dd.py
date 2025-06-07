@@ -7,6 +7,8 @@ def generate_code():
         code += line
     return code
 
+
+
 if __name__ == "__main__":
     generated_code = generate_code()
     print("Generated Code:")

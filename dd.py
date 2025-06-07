@@ -18,3 +18,4 @@ if __name__ == "__main__":
     with open("generated_code.py", "w") as f:
         f.write(generated_code)
     print("Code saved to generated_code.py")
+    print("Code generation complete.")

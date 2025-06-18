@@ -1,0 +1,49 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "my_logging_project"
+version = "0.1.0"
+description = "一个用于学习 Python logging 的示例项目"
+authors = [
+    { name = "Your Name", email = "your@email.com" }
+]
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = [
+    # 这里可以添加依赖包，例如：
+    # "requests>=2.0"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project.scripts]
+main = "src.main:main"
+
+# =============================
+# 进阶：常用工具和格式化配置示例
+# =============================
+
+[tool.black]
+line-length = 88
+skip-string-normalization = false
+
+[tool.isort]
+profile = "black"
+
+[tool.flake8]
+max-line-length = 88
+extend-ignore = ["E203", "W503"]
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "-ra -q"
+testpaths = ["tests"]
+
+# 你可以根据需要继续添加 mypy、coverage、tox 等工具的配置
+# 例如：
+# [tool.mypy]
+# python_version = 3.8
+# check_untyped_defs = true

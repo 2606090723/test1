@@ -1,0 +1,11 @@
+Metadata-Version: 2.4
+Name: my_logging_project
+Version: 0.1.0
+Summary: 一个用于学习 Python logging 的示例项目
+Author-email: Your Name <your@email.com>
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# 项目说明
+
+请在此补充项目介绍、使用方法等内容。
